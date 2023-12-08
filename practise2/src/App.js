@@ -1,5 +1,6 @@
 
 import './App.css';
+import Counter from "./components/Counter"
 import ControlledInput from './components/ControlledInput/ControlledInput';
 import Todo from './components/TodoList/Todo';
 
@@ -7,11 +8,11 @@ import Todo from './components/TodoList/Todo';
 
 function App() {
   return (
-      // <Counter />
+      <Counter />
       // <Users />
       // <Profile />
       // <Todo />
-      <ControlledInput />
+      // <ControlledInput />
   );
 }
 
