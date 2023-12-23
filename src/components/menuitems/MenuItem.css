@@ -1,0 +1,38 @@
+.app__menuitem{
+ display: flex;
+ width: 100%;
+ flex-direction: column;
+ 
+ margin: 1rem 0;
+}
+
+.app__menuitem-head{
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.app__menuitem-head_name{
+ flex: 1;
+}
+
+.app__menuitem-head_name p{
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.app__menuitem-head_dash{
+ width: 90px;
+ background-color: var(--color-golden);
+ height: 1px;
+ margin: 0 1rem;
+}
+
+.app__menuitem-head_price{
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+}
