@@ -1,0 +1,7 @@
+.bg-dark-discount-gradient{
+ @apply dark:bg-gradient-to-l from-gray-900 to-zinc-800 bg-gray-400/30;
+}
+
+/* .bg-light-discount-gradient{
+ @apply ;
+} */

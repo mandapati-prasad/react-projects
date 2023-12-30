@@ -1,0 +1,40 @@
+
+.desktop-ul{
+ @apply ss:flex-row ss:justify-end ss:items-center list-none ss:relative ss:top-0 ss:flex ss:animate-none ss:items-end ss:bg-none ss:py-0;
+}
+
+.desktop-li{
+ @apply ss:mb-0 ss:dark:text-white ss:text-black
+}
+
+.circle{
+@apply ss:ml-6;
+}
+
+.left{
+ left: 0;
+ animation: left 0.2s linear;
+}
+
+.right{
+ right: 0;
+ animation: right 0.2s linear;
+}
+
+@keyframes left{
+ 0%{
+  transform: translateX(100%);
+ }
+ 100%{
+  transform: translateX(0%);
+ }
+}
+
+@keyframes right{
+ 0%{
+  transform: translateX(-100%);
+ }
+ 100%{
+  transform: translateX(0%);
+ }
+}
