@@ -36,7 +36,7 @@ const Navbar = ({ theme, setTheme }) => {
               key={index}
               className={`text-white desktop-li font-normal text-[16px] font-poppins ${
                 index === navLinks.length - 1 ? "ss:mr-0" : "ss:mr-6"
-              } mb-6 cursor-pointer`}
+              } mb-6 cursor-pointer dark:hover:text-cyan-300 hover:text-cyan-500 hover:scale-[1.2] transition-all duration-300`}
               onClick={() => setToggle(!toggle)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -49,7 +49,8 @@ const Navbar = ({ theme, setTheme }) => {
             <div
               className={`${
                 theme === "dark" ? "right" : "left"
-              } w-10 ss:dark:bg-black border-2 ss:dark:border-white ss:border-black bg-black ss:bg-white transition-all h-full rounded-full absolute cursor-pointer shadow-ball dark:shadow-darkball`}
+                } w-10 dark:bg-black border-2 
+               dark:border-white ss:border-black ss:dark:border-white bg-white transition-all h-full rounded-full absolute cursor-pointer shadow-ball dark:shadow-darkball`}
               onClick={handleTheme}
             ></div>
 

@@ -14,7 +14,7 @@ const FeedbackCard = ({title, content, name, img}) => {
         <img src={img} alt="profile" className="w-[50px] h-[50px] mr-5" />
         <div>
           <h1 className='sm:text-lg font-semibold'>{title}</h1>
-          <p className='text-gray-400 font-medium'>{ name }</p>
+          <p className='text-gray-400 text-sm font-medium'>{ name }</p>
         </div>
       </div>
     </div>

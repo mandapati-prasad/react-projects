@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex-1 flex sm:my-0 justify-center items-center my-20 sm:my-10 relative">
+      <div className="flex-1 flex sm:my-0 justify-center items-center mt-20 mb-10 sm:my-10 relative">
         <img src={robot} alt="" className="relative z-10" />
         <div
           className="absolute w-[50%] h-[60%] 
@@ -66,7 +66,7 @@ const Hero = () => {
         ></div>
       </div>
 
-      <div className="ss:hidden relative mx-auto mb-4">
+      <div className="ss:hidden relative mx-auto mb-12">
         <GetStarted />
       </div>
     </section>

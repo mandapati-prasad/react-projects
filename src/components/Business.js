@@ -7,10 +7,10 @@ import { features } from '../constants';
 const Feature = ({icon, title, content}) => {
   return (
     <div
-      className={`flex xs:items-center flex-1 flex-col xs:flex-row p-5 sm:max-w-[600px] hover:bg-gradient-to-t dark:from-zinc-900/70  from-10% dark:to-zinc-600/60 to-100% from-cyan-200 to-cyan-400 rounded-xl`}
+      className={`flex xs:items-center flex-1 flex-col xs:flex-row py-5 sm:max-w-[600px] hover:bg-gradient-to-t dark:from-zinc-900/70  from-10% dark:to-zinc-600/60 to-100% from-cyan-200 to-cyan-400 rounded-xl`}
     >
       <div className='flex items-center'>
-        <div className="dark:bg-cyan-950/30 bg-cyan-950 w-[65px] xs:w-[75px] p-5 rounded-full overflow-hidden object-contain xs:mb-0 mr-5">
+        <div className="dark:bg-cyan-950/30 bg-cyan-950 w-[65px] xs:w-[75px] p-5 rounded-full overflow-hidden object-contain xs:mb-0 mx-3 xs:mr-4">
           <img className="w-full h-full" src={icon} alt="icon" />
         </div>
         <h1 className="text-lg xs:hidden font-bold tracking-wide">
@@ -21,7 +21,7 @@ const Feature = ({icon, title, content}) => {
         <h1 className="text-xl hidden xs:block font-bold tracking-wide">
           {title}
         </h1>
-        <p className="font-normal dark:text-gray-400 mt-3">{content}</p>
+        <p className="font-normal ml-4 xs:ml-0 dark:text-gray-400 mt-3 max-w-[300px] sm:max-w-[480px]">{content}</p>
       </div>
     </div>
   );
@@ -46,7 +46,7 @@ const Business = () => {
         </div>
       </div>
 
-      <div className={`${layout.sectionImg} flex-col `}>
+      <div className={`${layout.sectionImg} flex-col sm:gap-5`}>
         {
           features.map((feature, index) => {
             return <Feature title={ feature.title} icon={feature.icon} content={feature.content} />
